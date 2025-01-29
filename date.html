@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSET 2025 - Dhanalakshmi Srinivasan University</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+            
+        </style>
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,6 +18,7 @@
         }
 
         .header {
+            margin-top: 70px;
             text-align: center;
             padding: 50px;
             background: linear-gradient(135deg, #FFD901, #FDBD21);
@@ -20,13 +26,19 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .navbar {
-            background-color:  #001C4F;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    background-color: #001C4F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for elegance */
+    position: fixed; /* Keeps the navbar fixed on scroll */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
         .navbar .logo {
             display: flex;
             align-items: center;
@@ -57,9 +69,13 @@
             color: black;
         }
         .header h1, .header h2 {
+            color: black;
             margin: 0;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
         }
         .header button {
+            margin-top: 20px;
             background-color: #003366;
             color: white;
             padding: 15px 30px;

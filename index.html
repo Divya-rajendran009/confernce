@@ -19,13 +19,25 @@
             transition: background-color 0.5s ease;
         }
         .navbar {
-            background-color:  #001C4F;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    background-color: #001C4F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for elegance */
+    position: fixed; /* Keeps the navbar fixed on scroll */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Add hover effect for an interactive shadow */
+.navbar:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
         .navbar .logo {
             display: flex;
             align-items: center;
@@ -56,7 +68,8 @@
             color: black;
         }
         .banner {
-            background: url("/assets/CONFERENCE1.jpg") no-repeat center center;
+            margin-top: auto;
+            background: url("/assets/CONFERENCE1.png") no-repeat center center;
             background-size: cover;
             color: white;
             padding: 150px 20px;
@@ -64,14 +77,27 @@
             animation: fadeIn 1s ease-in-out;
         }
         .banner h1 {
-            font-size: 3.5em;
-            margin: 0;
-            background: linear-gradient(90deg, #ff0055, #ff0000, #00aaff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: bounce 2s infinite;
-            
-        }
+    font-size: 3.5em;
+    margin: 0;
+    background: linear-gradient(135deg, #FED501, #FED501 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
         .banner h1 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -83,7 +109,18 @@
   font-optical-sizing: auto;
 
         }
-
+        .bannerdates {
+            background-color: white;
+            color: #001C4F;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            margin: 20px auto;
+            width: fit-content;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
         .section {
             padding: 60px 20px;
             text-align: center;
@@ -192,7 +229,7 @@
             <img src="https://www.dsuniversity.ac.in/images/DSU_Logo.png" alt="University Logo">
                 
             <span>Dhanalakshmi Srinivasan University</span>
-            <img src="https://www.dsuniversity.ac.in/images/DSU_Logo.png" alt="University Logo">
+            
         </div>
         <div class="nav-links">
             <a href="index.html">Home</a>
@@ -205,8 +242,8 @@
     </div>
     <div class="banner">
         <h1>MSET 2025</h1>
-        <p>FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS IN ENGINEERING & TECHNOLOGY</p>
-        <p>CONFERENCE DATES: APRIL 24 & 25, 2025</p>
+        <p>FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS <br>   IN ENGINEERING & TECHNOLOGY</p>
+        <div class="bannerdates"><p>CONFERENCE DATES: APRIL 24 & 25, 2025</p></div>
     </div>
     <div class="section">
         <h2>Paper Submission Link</h2>

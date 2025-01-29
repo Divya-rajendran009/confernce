@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSET 2025 - Dhanalakshmi Srinivasan University, Trichy</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+            
+        </style>
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,13 +18,19 @@
         }
         
         .navbar {
-            background-color:  #001C4F;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    background-color: #001C4F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for elegance */
+    position: fixed; /* Keeps the navbar fixed on scroll */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
         .navbar .logo {
             display: flex;
             align-items: center;
@@ -50,18 +61,22 @@
             color: black;
         }
         .content {
+            margin-top: 70px;
             padding: 20px;
             text-align: center;
         }
         .header {
+            margin-top: 30px;
             text-align: center;
             padding: 50px 20px;
-            background-color: #c7c3c3;
+            background-color: #FED501;
             animation: fadeIn 1s ease-in-out;
         }
         .header h1 {
             margin: 0;
             color: #003366;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
         }
         .header h2 {
             margin: 10px 0;
@@ -170,10 +185,6 @@
         </div>
     </div>
 
-    <div class="content">
-        <h2>Welcome to MSET 2025</h2>
-        <p>Join us at Dhanalakshmi Srinivasan University for an international conference on Multidisciplinary Solutions in Engineering & Technology.</p>
-    </div>
     <div class="header">
         <h1>FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS <br> ENGINEERING & TECHNOLOGY (MSET 2025)</h1>
         <h2>Dhanalakshmi Srinivasan University, Trichy</h2>
