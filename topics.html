@@ -9,35 +9,54 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #FED501;
         }
         .navbar {
-            background-color: #003366;
-            overflow: hidden;
-            text-align: center;
+            background-color:  #001C4F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            transition: background-color 0.3s ease, color 0.3s ease;
+        .navbar .logo {
+            display: flex;
+            align-items: center;
         }
-        .navbar a:hover {
-            background-color: #ddd;
+        .navbar .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .navbar .logo span {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 5px;
+        }
+        .nav-links a:hover {
+            background-color: #FED501;
             color: black;
         }
         .header {
             text-align: center;
             padding: 50px;
-            background: linear-gradient(135deg, #4b6cb7, #182848);
+            background: linear-gradient(135deg, white, WHITE);
             color: white;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header h1, .header h2 {
+            color: black;
             margin: 0;
         }
         .header button {
@@ -66,6 +85,18 @@
         }
         .section:hover {
             transform: translateY(-5px);
+        }
+        .header button {
+            background-color: #003366;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .header button:hover {
+            background-color: #cc0055;
         }
         .section h2 {
             color: #990000;
@@ -110,16 +141,21 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="registration.html">Registration</a>
-        <a href="topics.html">Conference Topics</a>
-        <a href="date.html">Notable Dates</a>
-        <a href="sub.html">Submissions</a>
-        <a href="contact.html">Contact Us</a>
+        <div class="logo">
+            <img src="https://www.dsuniversity.ac.in/images/DSU_Logo.png" alt="University Logo">
+            <span>Dhanalakshmi Srinivasan University</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="registration.html">Registration</a>
+            <a href="topics.html">Conference Topics</a>
+            <a href="date.html">Notable Dates</a>
+            <a href="sub.html">Submissions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
     </div>
-
     <div class="header">
-        <h1>FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS IN ENGINEERING & TECHNOLOGY (MSET 2025)</h1>
+        <h1>FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS IN <br>ENGINEERING & TECHNOLOGY (MSET 2025)</h1>
         <h2>Dhanalakshmi Srinivasan University, Trichy</h2>
         <button onclick="window.location.href='#registration'">Registration Link</button>
     </div>

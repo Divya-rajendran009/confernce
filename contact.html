@@ -3,21 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSET 2025 - Dhanalakshmi Srinivasan University</title>
-    <link rel="stylesheet" href="/css/nav.css">
+    <title>MSET 2025 - Dhanalakshmi Srinivasan University, Trichy</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            transition: background-color 0.5s ease;
+            background-color: #FED501;
         }
-       
+        
+        .navbar {
+            background-color:  #001C4F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .navbar .logo span {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 5px;
+        }
+        .nav-links a:hover {
+            background-color: #FED501;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
         .header {
             text-align: center;
             padding: 50px 20px;
-            background-color: #f2f2f2;
+            background-color: #c7c3c3;
             animation: fadeIn 1s ease-in-out;
         }
         .header h1 {
@@ -63,11 +102,11 @@
         }
         .card {
             background-color: #f9f9f9;
-            padding: 20px;
+            
             margin: 10px;
             border: 1px solid #ddd;
             border-radius: 8px;
-            width: 200px;
+            width: 250px;
             text-align: center;
             transition: box-shadow 0.3s ease;
         }
@@ -78,6 +117,7 @@
             font-size: 50px;
             color: #990000;
         }
+        
         .footer {
             background-color: #003366;
             color: white;
@@ -115,19 +155,27 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <nav>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://www.dsuniversity.ac.in/images/DSU_Logo.png" alt="University Logo">
+            <span>Dhanalakshmi Srinivasan University</span>
+        </div>
+        <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="registration.html">Registration</a>
             <a href="topics.html">Conference Topics</a>
             <a href="date.html">Notable Dates</a>
             <a href="sub.html">Submissions</a>
             <a href="contact.html">Contact Us</a>
-        </nav>
+        </div>
     </div>
 
+    <div class="content">
+        <h2>Welcome to MSET 2025</h2>
+        <p>Join us at Dhanalakshmi Srinivasan University for an international conference on Multidisciplinary Solutions in Engineering & Technology.</p>
+    </div>
     <div class="header">
-        <h1>FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS IN ENGINEERING & TECHNOLOGY (MSET 2025)</h1>
+        <h1>FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS <br> ENGINEERING & TECHNOLOGY (MSET 2025)</h1>
         <h2>Dhanalakshmi Srinivasan University, Trichy</h2>
         <button onclick="window.location.href='#registration'">Registration Link</button>
     </div>
@@ -168,5 +216,7 @@
             alert('Thank you for contacting us! We will get back to you shortly.');
         });
     </script>
+
+
 </body>
 </html>
