@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSET 2025 - Dhanalakshmi Srinivasan University</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            transition: background-color 0.5s ease;
+        }
+       
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f2f2f2;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .header h1 {
+            margin: 0;
+            color: #003366;
+        }
+        .header h2 {
+            margin: 10px 0;
+            color: #990000;
+        }
+        .header button {
+            background-color: #003366;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .header button:hover {
+            background-color: #cc0055;
+        }
+        .section {
+            padding: 50px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        .section h2 {
+            color: #990000;
+            border-bottom: 2px solid #990000;
+            padding-bottom: 10px;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .card-icon {
+            font-size: 50px;
+            color: #990000;
+        }
+        .footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #cc0055;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar a {
+                margin: 10px 0;
+            }
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="registration.html">Registration</a>
+            <a href="topics.html">Conference Topics</a>
+            <a href="date.html">Notable Dates</a>
+            <a href="sub.html">Submissions</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </div>
+
+    <div class="header">
+        <h1>FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS IN ENGINEERING & TECHNOLOGY (MSET 2025)</h1>
+        <h2>Dhanalakshmi Srinivasan University, Trichy</h2>
+        <button onclick="window.location.href='#registration'">Registration Link</button>
+    </div>
+
+    <div class="section">
+        <h2>Get In Touch</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">✉️</div>
+                <h3>Official Email</h3>
+                <p>conference.mset@dsuniversity</p>
+                <p>.ac.in</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">👥</div>
+                <h3>Organizing Chair</h3>
+                <p>Dr. Shankar Durai Kannan</p>
+                <p>Dean of SET Block</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">👥</div>
+                <h3>Publication Chair</h3>
+                <p>Ass. Prof. Dr. Ram Kumar</p>
+                <p>EEE Department</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Dhanalakshmi Srinivasan University, Trichy</p>
+        <p>Contact: conference.mset@dsuniversity.ac.in</p>
+        <p>Phone: +91 7094958021</p>
+        <p><a href="#">Important Links</a></p>
+    </div>
+
+    <script>
+        document.querySelector('.contact-btn').addEventListener('click', function() {
+            alert('Thank you for contacting us! We will get back to you shortly.');
+        });
+    </script>
+</body>
+</html>

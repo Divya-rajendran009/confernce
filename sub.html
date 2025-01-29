@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Page - MSET 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+            transform: scale(1.1);
+        }
+        .main {
+            padding: 50px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .main h1, .main h2 {
+            color: #990000;
+            border-bottom: 2px solid #990000;
+            padding-bottom: 10px;
+            animation: popUp 0.5s ease;
+        }
+        .main ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .main ul li {
+            padding: 10px 0;
+        }
+        .submission-btn {
+            display: inline-block;
+            background-color: #990000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .submission-btn:hover {
+            background-color: #660000;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #ddd;
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            header, footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .main {
+                padding: 20px;
+                margin: 10px;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes popUp {
+            0% {
+                transform: scale(0.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="topics.html">Conference Topics</a></li>
+                <li><a href="date.html">Notable Dates</a></li>
+                <li><a href="sub.html">Submissions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <section class="submission-section">
+            <h1>Submission Guidelines</h1>
+            <p>Authors are invited to submit original and unpublished research papers in MSET format. All submissions must be made through the online submission system before the deadline. Accepted papers will be included in the conference proceedings.</p>
+            
+            <h2>Important Dates</h2>
+            <ul>
+                <li>Abstract Submission: 28th February, 2025</li>
+                <li>Full Paper Submission: 31st March, 2025</li>
+                <li>Acceptance Notification: 5th March, 2025</li>
+                <li>Registration Deadline: 28th February, 2025</li>
+            </ul>
+
+            <h2>Submission Link</h2>
+            <a href="https://edas.info/" target="_blank" class="submission-btn">Submit Your Paper</a>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>Dhanalakshmi Srinivasan University, Trichy</p>
+            <p>Contact: conference.mset@dsuniversiy.ac.in | Phone: +91 7094458021</p>
+            <p><a href="https://maps.google.com/?q=Dhanalakshmi+Srinivasan+University+Trichy" target="_blank">View Map</a></p>
+        </div>
+    </footer>
+</body>
+</html>
