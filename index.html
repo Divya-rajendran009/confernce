@@ -25,14 +25,32 @@
     align-items: center;
     padding: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for elegance */
-    position: fixed; /* Keeps the navbar fixed on scroll */
+    
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
     transition: all 0.3s ease-in-out; /* Smooth transition effect */
 }
+.invitation {
+   
+    padding: 30px;
+    align-self: auto;
+}
 
+.invitation h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    text-align-last: center;
+}
+
+.invitation p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #444;
+    max-width: 750px;
+    margin: 20px auto;
+}
 /* Add hover effect for an interactive shadow */
 .navbar:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -109,6 +127,94 @@
   font-optical-sizing: auto;
 
         }
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.event-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    gap: 40px;
+}
+
+.event-text {
+    flex: 1;
+    padding: 30px;
+}
+
+.event-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.event-text p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 15px 0;
+}
+
+.event-details p {
+    font-size: 1.2rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.event-details i {
+    color: #ff6600;
+    font-size: 1.5rem;
+}
+
+.register-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #333;
+}
+
+.event-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .event-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .event-image img {
+        width: 80%;
+    }
+}
         .bannerdates {
             background-color: white;
             color: #001C4F;
@@ -122,7 +228,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .section {
-            padding: 60px 20px;
+            padding: 30px 20px;
             text-align: center;
             background-color: white;
             margin: 20px;
@@ -245,6 +351,34 @@
         <p>FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS <br>   IN ENGINEERING & TECHNOLOGY</p>
         <div class="bannerdates"><p>CONFERENCE DATES: APRIL 24 & 25, 2025</p></div>
     </div>
+
+    <section class="invitation">
+        <h1>We cordially invite you to join us at MSET2025! <br>
+            April, 2025 | Trichy,Tamil Nadu</h1>
+        <p>
+            Join us at the MSET2025 on APRIL 2025 in Trichy,Tamil Nadu This event focuses on 
+            <strong>"FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS IN ENGINEERING & TECHNOLOGY."</strong> Engage with experts, 
+            policymakers, and professionals from around the world to discuss and develop innovative solutions 
+            to challenges surrounding pandemics. Don't miss this opportunity to network, share knowledge, 
+            and contribute to global health resilience. Register now and be part of the conversation that 
+            shapes the future of global healthcare and humanitarian efforts.
+        </p>
+    </section>
+    <section class="event-container">
+        <div class="event-text">
+            <h1>Your Participation Matters!</h1>
+            <p>Be a part of the Change the world needs today.</p>
+            <div class="event-details">
+                <p><i class="fas fa-map-marker-alt"></i> Seminar Hall ,Dhanalakshmi Srinivasan University<br>
+                    Trichy</p>
+                <p><i class="fas fa-calendar-alt"></i> April 2025</p>
+            </div>
+            <button class="register-btn">REGISTER</button>
+        </div>
+        <div class="event-image">
+            <img src="/assets/image.png" alt="Event Speaker">
+        </div>
+    </section>
     <div class="section">
         <h2>Paper Submission Link</h2>
         <a href="#">Click here</a>
