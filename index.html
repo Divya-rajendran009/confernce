@@ -18,7 +18,43 @@
             background-color: #f4f4f4;
             transition: background-color 0.5s ease;
         }
-
+        .navbar {
+            background-color:  #001C4F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .navbar .logo span {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 5px;
+        }
+        .nav-links a:hover {
+            background-color: #FED501;
+            color: black;
+        }
         .banner {
             background: url("/assets/CONFERENCE1.jpg") no-repeat center center;
             background-size: cover;
@@ -39,8 +75,6 @@
         .banner h1 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
 }
         .banner p {
             font-size: 1.5em;
@@ -153,17 +187,22 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <nav>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://www.dsuniversity.ac.in/images/DSU_Logo.png" alt="University Logo">
+                
+            <span>Dhanalakshmi Srinivasan University</span>
+            <img src="https://www.dsuniversity.ac.in/images/DSU_Logo.png" alt="University Logo">
+        </div>
+        <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="registration.html">Registration</a>
             <a href="topics.html">Conference Topics</a>
             <a href="date.html">Notable Dates</a>
             <a href="sub.html">Submissions</a>
             <a href="contact.html">Contact Us</a>
-        </nav>
+        </div>
     </div>
-
     <div class="banner">
         <h1>MSET 2025</h1>
         <p>FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS IN ENGINEERING & TECHNOLOGY</p>
