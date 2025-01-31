@@ -115,6 +115,54 @@
         .header button:hover {
             background-color: #cc0055;
         }
+
+        /*table*/
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            background: #FED501;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            font-size: 16px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            color: #0014cf;
+        }
+
+        th {
+            background: #0014cf;
+            color: #FED501;
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transition: 0.3s ease-in-out;
+        }
+
+        /* Middle Line */
+        td:nth-child(1) {
+            font-weight: bold;
+            width: 50%;
+        }
+
+        td:nth-child(2) {
+            width: 50%;
+            position: relative;
+        }
+
+        td:nth-child(2)::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: ;
         footer {
             background-color: #003366;
             color: white;
@@ -164,36 +212,52 @@
     </style>
 </head>
 <body>
-   
-        <div class="navbar">
-            <div class="logo">
-                <img src="https://www.dsuniversity.ac.in/images/DSU_Logo.png" alt="University Logo">
-                <span>Dhanalakshmi Srinivasan University</span>
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="registration.html">Registration</a>
-                <a href="topics.html">Conference Topics</a>
-                <a href="date.html">Notable Dates</a>
-                <a href="sub.html">Submissions</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://www.dsuniversity.ac.in/images/DSU_Logo.png" alt="University Logo">
+                
+            <span>Dhanalakshmi Srinivasan University</span>
+            
         </div>
-   
-    
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="topics.html">Conference Topics</a>
+            <a href="date.html">Key Dates</a>
+            <a href="sub.html">Submissions</a>
+            <a href="registration.html">Registration</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
     <main class="main">
         <section class="submission-section">
             <h1>Submission Guidelines</h1>
             <p>Authors are invited to submit original and unpublished research papers in MSET format. All submissions must be made through the online submission system before the deadline. Accepted papers will be included in the conference proceedings.</p>
             
             <h2>Important Dates</h2>
-            <ul>
-                <li>Abstract Submission: 28th February, 2025</li>
-                <li>Full Paper Submission: 31st March, 2025</li>
-                <li>Acceptance Notification: 5th March, 2025</li>
-                <li>Registration Deadline: 28th February, 2025</li>
-            </ul>
-
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Abstract Submission</td><td>March 10, 2025</td></tr>
+                    <tr><td>Full Paper Submission</td><td>March 25, 2025</td></tr>
+                    <tr><td>Notification of Abstract Acceptance</td><td>March 30, 2025</td></tr>
+                    <tr><td>Early Bird Registration Deadline</td><td>April 5, 2025</td></tr>
+                    <tr><td>Full Paper Acceptance Notification</td><td>April 10, 2025</td></tr>
+                    <tr><td>Final Paper Submission Deadline</td><td>April 12, 2025</td></tr>
+                    <tr><td>Standard Registration Deadline</td><td>April 15, 2025</td></tr>
+                    <tr><td>Presenter Registration Deadline</td><td>April 15, 2025</td></tr>
+                    <tr><td>Presentation Materials Submission Deadline</td><td>April 18, 2025</td></tr>
+                    <tr><td>Late Registration Closes</td><td>April 20, 2025</td></tr>
+                    <tr><td>Pre-Conference Workshops</td><td>April 23, 2025</td></tr>
+                    <tr><td>Conference Dates</td><td>April 24-25, 2025</td></tr>
+                </tbody>
+            </table>
+            
             <h2>Submission Link</h2>
             <a href="https://edas.info/" target="_blank" class="submission-btn">Submit Your Paper</a>
         </section>
