@@ -366,13 +366,13 @@ body {
                 </div>
         </div>
     </div>
-    <div class="dropdown-header" onclick="toggleDropdown()">
+    <div class="dropdown-header" onclick="toggleDropdown('dropdown1')">
         <span class="ogm">Conference Committie Members</span>
         <span class="arrow">&#9660;</span> <!-- Downward arrow -->
     </div>
 
     <!-- Hidden dropdown -->
-    <div id="dropdown" class="dropdown-content">
+    <div id="dropdown1" class="dropdown-content">
         <div class="photo-container">
             <div class="photo-item">
                 <img src="/assets/dsu.png" alt="Photo 1" class="photo">
@@ -552,22 +552,56 @@ body {
         <a href="#">Click here</a>
     </div>
 
-    <div class="dropdown-header" onclick="toggleDropdown()">
+    <div class="dropdown-header" onclick="toggleDropdown('dropdown2')">
         <span class="ogm">Nearby Tourist Places to visit</span>
         <span class="arrow">&#9660;</span> <!-- Downward arrow -->
     </div>
-    <div id="dropdown" class="dropdown-content">
+    <div id="dropdown2" class="dropdown-content">
         <div class="photo-container">
             <div class="photo-item">
-                <img src="/assets/dsu.png" alt="Photo 1" class="photo">
-                <div class="photo-name">Dr. M. SAKTHIVEL</div>
+               <img src="yercaud.jpeg" alt="Place 1" class="photo">
+                <div class="photo-name">YERCAUD</div>
             </div>
             <div class="photo-item">
-                <img src="/assets/dsu.png" alt="Photo 1" class="photo">
-                <div class="photo-name">Dr. M. SAKTHIVEL</div>
+                <img src="https://hblimg.mmtcdn.com/content/hubble/img/ramanagarttd/mmt/activities/m_ramanagara_2_l_360_640.jpg" alt="Place 2" class="photo">
+                <div class="photo-name">RAMANAGARA</div>
             </div>
+            <div class="photo-item">
+                <img src="https://th.bing.com/th/id/OSK.HEROrZ8JJ4b70ePKp0apPZ8wALMugAmaOas1TvV1gFt5E0k?rs=1&pid=ImgDetMain.jpg" alt="Place 3" class="photo">
+                <div class="photo-name">HOSUR</div>
+            </div>
+             <div class="photo-item">
+                <img src="https://ramyashotels.com/wp-content/uploads/2021/03/kallanai-dam-1024x521.jpg" alt="Place 3" class="photo">
+                <div class="photo-name">KALLANAI DAM</div>
+            </div>
+             <div class="photo-item">
+                <img src="https://1.bp.blogspot.com/-czd1OAHx34E/WI4OeJE5xII/AAAAAAAAFoU/R7F3v3HkVB8DEzWsmUrJNgpo2Di1XZS5gCLcB/s1600/srirangam%2Btemple%2Btower.jpg" alt="Place 3" class="photo">
+                <div class="photo-name">SRIRANGAM TEMPLE</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.goingindiaa.com/wp-content/uploads/2019/04/kodaikanal.jpg" alt="Place 3" class="photo">
+                <div class="photo-name">KODAIKANAL</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://th.bing.com/th/id/OIP.fLZqzXBzKR9d--qd4sbEUQAAAA?rs=1&pid=ImgDetMain.jpg" alt="Place 3" class="photo">
+                <div class="photo-name">ESTUARY SAROVAR PORTICO</div>
+            </div>
+             <div class="photo-item">
+                <img src="https://www.worldatlas.com/r/w1200/upload/0a/f1/01/shutterstock-554325643.jpg" alt="Place 3" class="photo">
+                <div class="photo-name">GOLDEN ROCK</div>
+            </div>
+            <!-- Add more places as needed -->
         </div>
     </div>
+    
+    <script>
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            dropdown.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
             
     <div class="venue">
         <h2>Dhanalakshmi Srinivasan University, Trichy, Lecture Hall, Academic Block</h2>
