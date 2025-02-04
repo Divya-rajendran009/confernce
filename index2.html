@@ -119,11 +119,141 @@
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
             display: inline-block;
             margin-top: 30px;
+            max-width: 100%;
         }
          .time{
             font-size: 40px;
             font-weight: bold;
         }
+        .logo2{
+          background-color: #fed501;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+/* General body styling for a cleaner look */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the dropdown header */
+.dropdown-header {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;  /* Space between the text and the arrow */
+    align-items: center;  /* Align text and arrow vertically */
+    width: 100%;  /* Occupy the full horizontal space */
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Arrow icon styling with transition */
+.arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.ogm{
+    max-width: 100%;
+}
+/* Initial styles for the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Adjusted to fit side-by-side images */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Styling the photo container to display images side by side */
+.photo-container {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap; /* Allow wrapping of items to the next line */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center images */
+}
+
+/* Styling for each image item */
+.photo-item {
+    position: relative;
+    width: calc(20% - 20px); /* 5 photos per row, accounting for gap */
+    max-width: 100%; /* Optional: Limits the size of each image */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+/* Styling the photos */
+.photo {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the photos */
+.photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Show photo name when image is hovered */
+.photo-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo-item:hover .photo-name {
+    opacity: 1;
+}
+
+/* Hover effect for the dropdown header */
+.dropdown-header:hover {
+    background-color: #f0f0f0;
+    border-color: #FED501; /* Yellow color */
+    color: #FED501; /* Yellow color */
+}
+
+/* Arrow rotation when dropdown is open */
+.dropdown-header.open .arrow {
+    transform: rotate(180deg);
+    color: #FED501; /* Yellow color */
+}
+
+/* Fade-in effect for the dropdown */
+.dropdown-content.show {
+    display: block;
+    opacity: 1;
+}
+
+
+
         </style>
 <link rel="stylesheet" href="/css/index.css">
 </head>
@@ -154,6 +284,7 @@
         <div class="bannerdates"><p>CONFERENCE DATES: APRIL 24 & 25, 2025</p></div>
     </div>
 
+</div>
     <section class="invitation">
         <h1>We cordially invite you to join us at MSET2025! <br>
             April, 2025 | Trichy,Tamil Nadu</h1>
@@ -167,7 +298,9 @@
         </p>
     </section>
 
-
+    <div  class="logo2">
+        <img src="/assets/logo.png">
+        </div>
     <div class="container">
         <div class="about-section">
             <div class="about-text">
@@ -203,7 +336,9 @@
                 </div>
                 
             </div>
+            
 
+       
             <div class="container">
                 <div class="about-section">
                     <div class="about-text">
@@ -229,6 +364,110 @@
                         <img src="https://www.dsuniversity.ac.in/gallery/t1.jpg" alt="Research Lab">
                     </div>
                 </div>
+        </div>
+    </div>
+    <div class="dropdown-header" onclick="toggleDropdown()">
+        <span class="ogm">Conference Committie Members</span>
+        <span class="arrow">&#9660;</span> <!-- Downward arrow -->
+    </div>
+
+    <!-- Hidden dropdown -->
+    <div id="dropdown" class="dropdown-content">
+        <div class="photo-container">
+            <div class="photo-item">
+                <img src="/assets/dsu.png" alt="Photo 1" class="photo">
+                <div class="photo-name">Dr. M. SAKTHIVEL</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Raja_Annamala.jpeg" alt="Photo 2" class="photo">
+                <div class="photo-name">Dr. G. RAJA ANNAMALAI</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Dr_M_Santhosh.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Dr. M. SANTHOSH</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/v_selvi1.JPG" alt="Photo 3" class="photo">
+                <div class="photo-name">ThamilSelvil</div>
+            </div>
+  
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Rajini.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">RAJINIGANTH</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Mrs_R_Vasuki.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Mrs. R.VASUKI</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Mrs-Sheeba.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Mrs. M. SHEEBA</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Shabeer-V-V.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Mr. V.V. SHABEER</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Mrs_R_Manoranjani.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Mrs. R. MANO RANJANI</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Sashikumar-S.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Mr. S. SASHIKUMAR</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/cJeeva.jpeg" alt="Photo 1" class="photo">
+                <div class="photo-name">Mr. JEEVA K</div>
+            </div>
+            <div class="photo-item">
+                <img src="/assets/dsu.png" alt="Photo 2" class="photo">
+                <div class="photo-name">C. MERLYNE SANDRA CHRISTINA</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/C_Sudhakar.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Mr. C. SUDHAKAR</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Indirajith-K1.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Dr. K. INDIRAJITH</div>
+            </div>
+  
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/sasikala-raju.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Mrs. R. SASIKALA</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Anusuya-M.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Mrs. M. ANUSIYA</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Mrs-A-Saranya.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">A SARANYA</div>
+            </div>
+            <div class="photo-item">
+                <img src="/assets/dsu.png" alt="Photo 3" class="photo">
+                <div class="photo-name">Dr. M. MANICKAM</div>
+            </div>
+            <div class="photo-item">
+                <img src="/assets/dsu.png" alt="Photo 3" class="photo">
+                <div class="photo-name">Dr. P G  SAM INFANT JONES</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Amutha.jpeg" alt="Photo 3" class="photo">
+                <div class="photo-name">MS. M. AMUTHA</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Ms-K-Bharathi.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Mrs. K. BHARATHI</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Dr-Shankar-Duraikannan.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Mrs. SRIPOORNIMA</div>
+            </div>
+            <div class="photo-item">
+                <img src="https://www.dsuniversity.ac.in/dsu-university/datas/staff_photos/Dr-Shankar-Duraikannan.jpg" alt="Photo 3" class="photo">
+                <div class="photo-name">Photo 22</div>
+            </div>
         </div>
     </div>
 
@@ -312,6 +551,24 @@
         <h2>MSET 2025 Presentation Template</h2>
         <a href="#">Click here</a>
     </div>
+
+    <div class="dropdown-header" onclick="toggleDropdown()">
+        <span class="ogm">Nearby Tourist Places to visit</span>
+        <span class="arrow">&#9660;</span> <!-- Downward arrow -->
+    </div>
+    <div id="dropdown" class="dropdown-content">
+        <div class="photo-container">
+            <div class="photo-item">
+                <img src="/assets/dsu.png" alt="Photo 1" class="photo">
+                <div class="photo-name">Dr. M. SAKTHIVEL</div>
+            </div>
+            <div class="photo-item">
+                <img src="/assets/dsu.png" alt="Photo 1" class="photo">
+                <div class="photo-name">Dr. M. SAKTHIVEL</div>
+            </div>
+        </div>
+    </div>
+            
     <div class="venue">
         <h2>Dhanalakshmi Srinivasan University, Trichy, Lecture Hall, Academic Block</h2>
         <p>Dhanalakshmi Srinivasan University, Trichy, Tamil Nadu, India</p>
@@ -375,5 +632,30 @@
 
         setInterval(updateCountdown, 1000);
         updateCountdown();
+
+        // Function to toggle the dropdown visibility and arrow rotation
+// Function to toggle the dropdown visibility and arrow rotation
+// Function to toggle the dropdown visibility and arrow rotation
+function toggleDropdown() {
+    var dropdown = document.getElementById("dropdown");
+    var header = document.querySelector(".dropdown-header");
+
+    // Toggle the visibility (show or hide)
+    if (dropdown.style.display === "none" || dropdown.style.display === "") {
+        dropdown.style.display = "block";
+        setTimeout(() => {
+            dropdown.classList.add("show"); // Add fade-in effect
+        }, 10); // Slight delay to trigger fade-in
+
+        header.classList.add("open"); // Rotate the arrow
+    } else {
+        dropdown.classList.remove("show"); // Remove fade-in effect
+        setTimeout(() => {
+            dropdown.style.display = "none"; // Hide the dropdown
+        }, 500); // Delay hiding to match fade-out
+        header.classList.remove("open"); // Reset arrow rotation
+    }
+}
+
 </script>
 </html>
